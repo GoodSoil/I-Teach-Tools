@@ -6,7 +6,7 @@
     <h2>Application Setup</h2>
     <ul>
         <li>Make a directory and run <code>npm init</code>. Add .gitignore (from <a href="https://www.gitignore.io/api/node,windows,typings">gitignore.io</a>) and .gitattributes (for Windows).</li>
-        <li>Use npm to install Angular 2 and its key dependencies (zone.js and rxjs). Once of the things that you will encounter if you use npm to install Angular manually are notices of peer dependencies that Angular 2 has on other packages.
+        <li>Use npm to install Angular 2 and its key dependencies (zone.js and rxjs). Remember to use the <code>--save<code> option to include those packages in the site's package.json file. One of the things that you will encounter if you use npm to install Angular manually are notices of peer dependencies that Angular 2 has on other packages; peer dependencies are not loaded by default, and you will need to explicitly load all of them for your development.
             <figure>
                 <figcaption>Peer Dependencies</figcaption>
                 <pre><code>npm WARN @angular/core@2.0.0-rc.1 requires a peer of rxjs@5.0.0-beta.6 but none was installed.
@@ -30,7 +30,7 @@ npm WARN @angular/core@2.0.0-rc.1 requires a peer of zone.js@^0.6.6 but none was
                 <p>CodeQuote: package.json</p>
             </figure>
         </li>
-        <li></li>
+        <li>Configure TypeScript and Typings</li>
         <li></li>
         <li></li>
         <li></li>
