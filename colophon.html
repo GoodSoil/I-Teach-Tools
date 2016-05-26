@@ -3,6 +3,7 @@
         <h1>Colophon <small>How this was built</small></h1>
     </header>
     <p>This provides a summary of how this Angular 2 app was built and the dependencies in this app.</p>
+    
     <h2>Application Setup</h2>
     <ul>
         <li>Make a directory and run <code>npm init</code>. Add .gitignore (from <a href="https://www.gitignore.io/api/node,windows,typings">gitignore.io</a>) and .gitattributes (for Windows).</li>
@@ -30,10 +31,16 @@ npm WARN @angular/core@2.0.0-rc.1 requires a peer of zone.js@^0.6.6 but none was
                 <p>CodeQuote: package.json</p>
             </figure>
         </li>
-        <li>Configure TypeScript and Typings</li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Configure TypeScript and Typings (tsconfig.json and typings.json)
+            <ul>
+                <li>TypeScript. Run <code>tsc --init</code> to create the tsconfig.json file.</li>
+                <li>Typings. You need to run <code>typings install dt~es6-shim --save --global</code> (as per <a href="https://github.com/typings/typings/issues/517">this issue</a>)</li>
+            </ul>
+        </li>
+        <li>NPM Scripts in package.json</li>
+        <li>Initial index.html Page using CDNs (with embedded system configuration and bootstrapping)</li>
+        <li>Create Site Layout Component as Root Component</li>
+        <li>Test-run the Application</li>
         <li></li>
         <li></li>
         <li></li>
@@ -41,6 +48,21 @@ npm WARN @angular/core@2.0.0-rc.1 requires a peer of zone.js@^0.6.6 but none was
         <li></li>
     </ul>
     
+    
+    
+    <h2>Core Development</h2>
+    <p>The primary aim of this particular application is to help in creating <b>Learning Outcome Guides</b> for classroom delivery of course materials.</p>
+    
+    
+    
+    
+    <h2>Post-development Packaging</h2>
+    <p>The goals of the post-development packaging is to deliver this app as a Windows application.</p>
+    
+    
+    
+    
+    <h1>Appendix</h1>
     <h2>Angular Libraries</h2>
     <dl>
         <dt>@angular/core</dt>
